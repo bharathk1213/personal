@@ -17,7 +17,7 @@ const move=(delay)=>({
     }
 })
 
-function Navbar() {
+function Navbar({onClick}) {
     return (
       <>
         <div className="flex flex-row sm:flex-row justify-between text-center text-white mx-4 my-4 p-4">
@@ -53,6 +53,7 @@ function Navbar() {
                 >
                     <a href="https://x.com/Bharath57197232" target='_blank'><FontAwesomeIcon icon={faTwitter} className="text-blue-500" size='2x'/></a>
                 </motion.div>
+                <button onClick={onClick} className='text-white'>click</button>
                 
             </div>
         </div>
